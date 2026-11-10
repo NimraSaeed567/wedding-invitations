@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="balconyIllustrationTitle">
+  <title id="balconyIllustrationTitle">Illustrated stone balcony overlooking a mountain lake at dusk</title>
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fb9c9"/>
+      <stop offset="38%" stop-color="#bcd8d6"/>
+      <stop offset="66%" stop-color="#eadfc4"/>
+      <stop offset="100%" stop-color="#f7ecd6"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff3d6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mountainFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9db2bc"/>
+      <stop offset="100%" stop-color="#84a0ac"/>
+    </linearGradient>
+    <linearGradient id="mountainMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#748f98"/>
+      <stop offset="100%" stop-color="#5c7982"/>
+    </linearGradient>
+    <linearGradient id="mountainNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#54707a"/>
+      <stop offset="100%" stop-color="#3c5560" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="mountainNear2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c6870"/>
+      <stop offset="100%" stop-color="#37505a"/>
+    </linearGradient>
+    <linearGradient id="lakeGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e6dd"/>
+      <stop offset="18%" stop-color="#a9c6c4"/>
+      <stop offset="60%" stop-color="#5f9490"/>
+      <stop offset="100%" stop-color="#3d726c"/>
+    </linearGradient>
+    <linearGradient id="stonePillar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cabb98"/>
+      <stop offset="45%" stop-color="#e6dcc0"/>
+      <stop offset="100%" stop-color="#b7a880"/>
+    </linearGradient>
+    <linearGradient id="stonePillarRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b7a880"/>
+      <stop offset="55%" stop-color="#e6dcc0"/>
+      <stop offset="100%" stop-color="#cabb98"/>
+    </linearGradient>
+    <linearGradient id="stoneArchBand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9dfc4"/>
+      <stop offset="100%" stop-color="#c2b28c"/>
+    </linearGradient>
+    <linearGradient id="railGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ece2c6"/>
+      <stop offset="100%" stop-color="#c7b790"/>
+    </linearGradient>
+    <linearGradient id="potGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c1703f"/>
+      <stop offset="100%" stop-color="#8f4a29"/>
+    </linearGradient>
+    <radialGradient id="roseGradient" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#f2c3ce"/>
+      <stop offset="100%" stop-color="#cf7d92"/>
+    </radialGradient>
+    <linearGradient id="cushionGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf3e2"/>
+      <stop offset="100%" stop-color="#e9dcc0"/>
+    </linearGradient>
+    <clipPath id="archOpening">
+      <path d="M230,860 L230,300 C230,150 330,60 500,45 C560,38 620,34 700,34 C780,34 840,38 900,45 C1070,60 1170,150 1170,300 L1170,860 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer stone surround (fills whole canvas as the wall the doorway is cut into) -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#stoneArchBand)"/>
+
+  <!-- Vista visible through the archway -->
+  <g clip-path="url(#archOpening)">
+    <rect x="150" y="0" width="1300" height="900" fill="url(#skyGradient)"/>
+    <circle cx="860" cy="330" r="150" fill="url(#sunGlow)"/>
+
+    <!-- distant mountains -->
+    <path d="M150,470 L280,380 L370,450 L470,360 L560,430 L660,370 L760,440 L860,390 L960,450 L1060,400 L1160,455 L1260,410 L1360,460 L1450,420 L1450,540 L150,540 Z" fill="url(#mountainFar)" opacity="0.85"/>
+    <!-- mid mountains -->
+    <path d="M150,520 L250,440 L340,505 L430,430 L540,500 L640,445 L740,510 L850,455 L950,515 L1060,460 L1160,520 L1260,470 L1360,525 L1450,480 L1450,600 L150,600 Z" fill="url(#mountainMid)" opacity="0.92"/>
+    <!-- near mountains -->
+    <path d="M150,585 L260,500 L360,560 L470,485 L580,555 L690,495 L800,565 L910,500 L1020,560 L1130,505 L1240,565 L1350,510 L1450,560 L1450,650 L150,650 Z" fill="url(#mountainNear)"/>
+    <path d="M150,610 L300,545 L420,600 L560,530 L700,605 L840,540 L980,605 L1120,545 L1260,610 L1400,555 L1450,590 L1450,660 L150,660 Z" fill="url(#mountainNear2)" opacity="0.9"/>
+
+    <!-- distant village silhouette on the far shore -->
+    <g fill="#33454c" opacity="0.82">
+      <rect x="470" y="600" width="20" height="26"/>
+      <polygon points="480,600 470,600 490,586"/>
+      <rect x="498" y="596" width="16" height="30"/>
+      <polygon points="506,596 498,596 514,584"/>
+      <rect x="522" y="604" width="14" height="22"/>
+      <polygon points="529,604 522,604 536,592"/>
+      <rect x="545" y="608" width="10" height="18"/>
+      <rect x="560" y="592" width="8" height="34"/>
+      <polygon points="564,592 560,600 568,600"/>
+      <rect x="440" y="608" width="12" height="18"/>
+      <polygon points="446,608 440,608 452,598"/>
+    </g>
+
+    <!-- lake with soft reflective gradient -->
+    <rect x="150" y="626" width="1300" height="240" fill="url(#lakeGradient)"/>
+    <g opacity="0.22" transform="translate(0,1252) scale(1,-1)">
+      <path d="M150,585 L260,500 L360,560 L470,485 L580,555 L690,495 L800,565 L910,500 L1020,560 L1130,505 L1240,565 L1350,510 L1450,560 L1450,650 L150,650 Z" fill="#3c5560"/>
+    </g>
+    <g opacity="0.5">
+      <rect x="150" y="640" width="1300" height="2" fill="#eef6f2"/>
+      <rect x="150" y="662" width="1300" height="1.5" fill="#eef6f2" opacity="0.7"/>
+      <rect x="150" y="700" width="1300" height="1.5" fill="#eef6f2" opacity="0.5"/>
+      <rect x="150" y="748" width="1300" height="1.5" fill="#eef6f2" opacity="0.35"/>
+      <rect x="150" y="806" width="1300" height="1.5" fill="#eef6f2" opacity="0.22"/>
+    </g>
+  </g>
+
+  <!-- stone arch band (the doorway frame itself, drawn over the vista edges) -->
+  <path d="M180,900 L180,300 C180,120 300,20 500,3 C580,-6 660,-10 700,-10 C740,-10 820,-6 900,3 C1100,20 1220,120 1220,300 L1220,900 L1170,900 L1170,300 C1170,150 1070,60 900,45 C840,38 780,34 700,34 C620,34 560,38 500,45 C330,60 230,150 230,300 L230,900 Z" fill="url(#stoneArchBand)"/>
+  <path d="M700,-10 C660,-10 580,-6 500,3 C300,20 180,120 180,300 L180,340 L230,340 L230,300 C230,150 330,60 500,45 C560,38 620,34 700,34 C780,34 840,38 900,45 C1070,60 1170,150 1170,300 L1170,340 L1220,340 L1220,300 C1220,120 1100,20 900,3 C820,-6 740,-10 700,-10 Z" fill="#00000010"/>
+
+  <!-- left pillar -->
+  <rect x="0" y="0" width="180" height="900" fill="url(#stonePillar)"/>
+  <g stroke="#00000014" stroke-width="2">
+    <line x1="0" y1="140" x2="180" y2="140"/>
+    <line x1="0" y1="300" x2="180" y2="300"/>
+    <line x1="0" y1="460" x2="180" y2="460"/>
+    <line x1="0" y1="620" x2="180" y2="620"/>
+    <line x1="0" y1="780" x2="180" y2="780"/>
+  </g>
+
+  <!-- right pillar -->
+  <rect x="1220" y="0" width="380" height="900" fill="url(#stonePillarRight)"/>
+  <g stroke="#00000014" stroke-width="2">
+    <line x1="1220" y1="140" x2="1600" y2="140"/>
+    <line x1="1220" y1="300" x2="1600" y2="300"/>
+    <line x1="1220" y1="460" x2="1600" y2="460"/>
+    <line x1="1220" y1="620" x2="1600" y2="620"/>
+    <line x1="1220" y1="780" x2="1600" y2="780"/>
+  </g>
+
+  <!-- balcony floor / balustrade across the bottom, inside the opening -->
+  <g clip-path="url(#archOpening)">
+    <rect x="150" y="800" width="1300" height="100" fill="url(#railGradient)"/>
+    <rect x="150" y="800" width="1300" height="10" fill="#00000012"/>
+    <g fill="url(#railGradient)" stroke="#00000018" stroke-width="1.5">
+      <rect x="250" y="812" width="18" height="56" rx="4"/>
+      <rect x="286" y="812" width="18" height="56" rx="4"/>
+      <rect x="322" y="812" width="18" height="56" rx="4"/>
+      <rect x="358" y="812" width="18" height="56" rx="4"/>
+      <rect x="394" y="812" width="18" height="56" rx="4"/>
+      <rect x="900" y="812" width="18" height="56" rx="4"/>
+      <rect x="936" y="812" width="18" height="56" rx="4"/>
+      <rect x="972" y="812" width="18" height="56" rx="4"/>
+      <rect x="1008" y="812" width="18" height="56" rx="4"/>
+      <rect x="1044" y="812" width="18" height="56" rx="4"/>
+      <rect x="1080" y="812" width="18" height="56" rx="4"/>
+    </g>
+    <rect x="230" y="800" width="1170" height="14" fill="url(#railGradient)"/>
+  </g>
+
+  <!-- cream sofa cushions hinting at furniture along the bottom edges -->
+  <g clip-path="url(#archOpening)">
+    <ellipse cx="290" cy="880" rx="110" ry="46" fill="url(#cushionGradient)"/>
+    <ellipse cx="230" cy="866" rx="70" ry="36" fill="url(#cushionGradient)" opacity="0.9"/>
+    <ellipse cx="1090" cy="880" rx="110" ry="46" fill="url(#cushionGradient)"/>
+    <ellipse cx="1150" cy="866" rx="70" ry="36" fill="url(#cushionGradient)" opacity="0.9"/>
+  </g>
+
+  <!-- terracotta flower pots with pink rose clusters, sitting on the railing -->
+  <g>
+    <path d="M470,770 L520,770 L512,822 L478,822 Z" fill="url(#potGradient)"/>
+    <rect x="464" y="760" width="62" height="14" rx="4" fill="#a85b34"/>
+    <g>
+      <path d="M478,762 C470,742 480,726 495,724 C500,712 520,712 525,724 C540,726 546,744 536,762 Z" fill="#5c8362"/>
+      <circle cx="484" cy="748" r="11" fill="url(#roseGradient)"/>
+      <circle cx="500" cy="738" r="13" fill="url(#roseGradient)"/>
+      <circle cx="517" cy="748" r="11" fill="url(#roseGradient)"/>
+      <circle cx="500" cy="756" r="12" fill="url(#roseGradient)"/>
+    </g>
+  </g>
+  <g>
+    <path d="M1080,770 L1130,770 L1122,822 L1088,822 Z" fill="url(#potGradient)"/>
+    <rect x="1074" y="760" width="62" height="14" rx="4" fill="#a85b34"/>
+    <g>
+      <path d="M1088,762 C1080,742 1090,726 1105,724 C1110,712 1130,712 1135,724 C1150,726 1156,744 1146,762 Z" fill="#5c8362"/>
+      <circle cx="1094" cy="748" r="11" fill="url(#roseGradient)"/>
+      <circle cx="1110" cy="738" r="13" fill="url(#roseGradient)"/>
+      <circle cx="1127" cy="748" r="11" fill="url(#roseGradient)"/>
+      <circle cx="1110" cy="756" r="12" fill="url(#roseGradient)"/>
+    </g>
+  </g>
+
+  <!-- subtle vignette for text legibility -->
+  <rect x="0" y="0" width="1600" height="900" fill="#1c2420" opacity="0.08"/>
+</svg>

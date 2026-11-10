@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali &amp; Sara | A Celebration of Love</title>
+    <meta
+      name="description"
+      content="Ali and Sara invite you to celebrate their Mehndi, Baraat &amp; Nikkah, and Walima. Please find all the details and RSVP below."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ali & Sara | Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="We are getting married! Join us for a celebration of love, prayer, and family."
+    />
+    <!-- TODO: replace assets/social-preview.jpg with a real social-share image before launch. -->
+    <meta property="og:image" content="assets/social-preview.jpg" />
+    <meta name="theme-color" content="#eda8bf" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://*.supabase.co; frame-src https://www.google.com https://www.google.com/maps; font-src 'self' data: https://fonts.gstatic.com; form-action https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260731-1" />
+  </head>
+  <body>
+    <div class="opening-envelope" id="openingEnvelope" aria-label="Opening invitation envelope">
+      <div class="envelope-scene">
+        <div class="envelope-letter" aria-hidden="true">
+          <p class="letter-overline">Exclusive Invitation</p>
+          <h2>Ali &amp; Sara</h2>
+          <p class="letter-date">For Our Dearest Guest</p>
+        </div>
+        <div class="envelope-body">
+          <div class="envelope-flap-top" aria-hidden="true"></div>
+          <div class="envelope-flap-left" aria-hidden="true"></div>
+          <div class="envelope-flap-right" aria-hidden="true"></div>
+          <div class="envelope-flap-bottom" aria-hidden="true"></div>
+          <button class="envelope-seal" id="openEnvelope" type="button" aria-label="Open invitation envelope">
+            A<span>&amp;</span>S
+          </button>
+          <p class="envelope-note" id="envelopeNote">This invitation is exclusively for you</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="floral-overlay floral-overlay-left" aria-hidden="true"></div>
+    <div class="floral-overlay floral-overlay-right" aria-hidden="true"></div>
+
+    <header class="site-header glass" id="top">
+      <nav class="nav container" aria-label="Primary">
+        <a class="monogram" href="#home" aria-label="Back to top">
+          A<span>&amp;</span>S
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="site-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#date-reveal">Date Reveal</a></li>
+          <li><a href="#countdown">Countdown</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#details">Events</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#dress-code">Dress Code</a></li>
+          <li><a href="#blessings">Blessings</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section hero-screen" id="home" aria-labelledby="hero-title">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="assets/hero-poster.jpg"
+          aria-hidden="true"
+        >
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-screen-glow" aria-hidden="true"></div>
+        <div class="container hero-content reveal">
+          <p class="hero-kicker">YOU ARE CORDIALLY INVITED</p>
+          <h1 class="script-title" id="hero-title">
+            <span>Ali</span>
+            <span class="ampersand">&amp;</span>
+            <span>Sara</span>
+          </h1>
+          <p class="hero-divider" aria-hidden="true"><span></span>&#10022;<span></span></p>
+          <p class="tagline">A Celebration of Love</p>
+          <div id="guestGreeting" style="display:none; margin-top: -0.5rem; margin-bottom: 1.5rem; color: var(--accent-soft); font-weight: 500;">
+            Dear <span id="guestName">Guest</span>, you are cordially invited.
+          </div>
+        </div>
+        <div class="hero-screen-actions reveal">
+          <a class="hero-dock-btn" href="#date-reveal">Open Invitation</a>
+          <a class="hero-dock-circle" href="#countdown" aria-label="Scroll down">&#8595;</a>
+        </div>
+      </section>
+
+      <section
+        class="section date-reveal-section"
+        id="date-reveal"
+        aria-labelledby="date-reveal-title"
+      >
+        <div class="container">
+          <div class="date-reveal-shell reveal">
+            <div class="date-reveal-overlay" aria-hidden="true"></div>
+            <div class="date-reveal-inner">
+              <h2 class="section-title script-title" id="date-reveal-title">Reveal When It Begins</h2>
+              <div class="scratch-card" id="scratchCard" aria-label="Scratch card date reveal">
+                <p class="scratch-hint" id="scratchHint" aria-live="polite">Scratch to reveal when our celebrations begin</p>
+                <div class="scratch-stage" id="scratchStage">
+                  <!-- Populated at load time from the earliest entry in the EVENTS array in main.js -->
+                  <p class="scratch-date" id="scratchDateText">10 April 2026</p>
+                  <canvas
+                    class="scratch-canvas"
+                    id="scratchCanvas"
+                    width="440"
+                    height="84"
+                    aria-hidden="true"
+                  ></canvas>
+                </div>
+                <button class="scratch-skip" id="scratchSkip" type="button">Reveal instantly</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section countdown-section" id="countdown" aria-labelledby="countdown-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="countdown-title">Countdown to Forever</h2>
+          <p class="section-intro reveal">Every moment brings us closer to our special celebrations.</p>
+          <!-- Populated from the EVENTS array in main.js; click a pill to change the countdown target -->
+          <div class="countdown-tabs reveal" id="countdownTabs" role="tablist" aria-label="Select celebration"></div>
+          <p class="countdown-target-label reveal" id="countdownTargetLabel"></p>
+          <div class="countdown-grid reveal" aria-live="polite">
+            <article class="count-card glass">
+              <p class="count-value" id="days">0</p>
+              <p class="count-label">Days</p>
+            </article>
+            <article class="count-card glass">
+              <p class="count-value" id="hours">0</p>
+              <p class="count-label">Hours</p>
+            </article>
+            <article class="count-card glass">
+              <p class="count-value" id="minutes">0</p>
+              <p class="count-label">Minutes</p>
+            </article>
+            <article class="count-card glass">
+              <p class="count-value" id="seconds">0</p>
+              <p class="count-label">Seconds</p>
+            </article>
+          </div>
+          <p class="countdown-note reveal" id="countdownMessage"></p>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"><span></span></div>
+
+      <section class="section story-section" id="story" aria-labelledby="story-title">
+        <div class="container story-grid">
+          <figure class="story-image-wrap reveal">
+            <img
+              class="story-image"
+              src="assets/couple-photo.jpg"
+              alt="Illustrated portrait of Ali and Sara together"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="story-content reveal">
+            <h2 class="section-title" id="story-title">Our Story</h2>
+            <p>
+              What began as a quiet conversation became a lifelong promise. Through
+              every season, we found comfort in each other, grew in faith, and
+              discovered the beauty of walking side by side. With grateful hearts,
+              we now begin our forever and invite you to witness this chapter of
+              love, prayer, and family.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"><span></span></div>
+
+      <section class="section details-section" id="details" aria-labelledby="details-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="details-title">Event Details</h2>
+          <!-- One event-card per entry in the EVENTS array (main.js), rendered by renderEventCards() -->
+          <div class="event-cards" id="eventCards"></div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="location" aria-labelledby="location-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="location-title">Location</h2>
+          <!-- One location-card + embedded map per UNIQUE venue among EVENTS, rendered by renderLocations() -->
+          <div class="location-list" id="locationList"></div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="timeline-title">Ceremony Timeline</h2>
+          <p class="section-intro reveal">From Mehndi to Walima - a look at our full celebration schedule.</p>
+          <!-- One timeline-item per entry in EVENTS, in date order, rendered by renderCeremonyTimeline() -->
+          <div class="timeline" id="ceremonyTimeline"></div>
+        </div>
+      </section>
+
+
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close preview">
+          &times;
+        </button>
+        <img id="lightboxImage" src="" alt="" />
+        <p id="lightboxCaption"></p>
+      </div>
+
+      <section class="section dress-section" id="dress-code" aria-labelledby="dress-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="dress-title">Dress Code</h2>
+          <div class="dress-grid">
+            <article class="dress-item reveal glass">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3h10l1 6-6 3-6-3 1-6zM9 12l-2 9h10l-2-9" />
+                </svg>
+              </div>
+              <h3>Females</h3>
+              <p>Pastel shades are preferred for all female guests.</p>
+            </article>
+            <article class="dress-item reveal glass">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3v18M7 8h10M8 16h8M9 12h6" />
+                </svg>
+              </div>
+              <h3>Males</h3>
+              <p>White or off-white attire is preferred for male guests.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section blessings-section" id="blessings" aria-labelledby="blessings-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="blessings-title">Blessings Wall</h2>
+          <p class="section-intro reveal">
+            Share your duas and kind wishes for Ali &amp; Sara. Every blessing is saved and
+            becomes part of their forever memories.
+          </p>
+
+          <div class="blessings-layout">
+            <!--
+              TODO: create a new Formspree form for this card and put its endpoint below
+              (replace YOUR_FORMSPREE_BLESSING_ENDPOINT). Also create a Supabase project
+              (or reuse an existing one) with a `card2_blessings_wall` table and put its
+              project URL / anon key below (replace YOUR_SUPABASE_PROJECT_URL and
+              YOUR_SUPABASE_ANON_KEY). Do not reuse another card's Formspree ID or
+              Supabase anon key here.
+            -->
+            <form
+              class="blessing-form reveal glass"
+              id="blessingForm"
+              action="https://formspree.io/f/YOUR_FORMSPREE_BLESSING_ENDPOINT"
+              method="POST"
+              data-endpoint=""
+              data-sync-url="YOUR_SUPABASE_PROJECT_URL"
+              data-sync-key="YOUR_SUPABASE_ANON_KEY"
+              data-sync-table="card2_blessings_wall"
+              novalidate
+            >
+              <input type="hidden" name="form_name" value="Wedding Blessing" />
+              <div class="form-row">
+                <label for="blessingName">Your Name</label>
+                <input
+                  id="blessingName"
+                  name="blessingName"
+                  type="text"
+                  maxlength="50"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="blessingMessage">Your Blessing</label>
+                <textarea
+                  id="blessingMessage"
+                  name="blessingMessage"
+                  rows="4"
+                  maxlength="180"
+                  placeholder="Write a heartfelt wish..."
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Add Blessing</button>
+              <p class="blessing-feedback" id="blessingFeedback" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="blessing-grid reveal" id="blessingGrid" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="rsvp-title">RSVP</h2>
+          <p class="section-intro reveal">Please confirm your attendance with the form below.</p>
+          <!--
+            TODO: create a new Formspree form for this card and put its endpoint below
+            (replace YOUR_FORMSPREE_RSVP_ENDPOINT). Also create a Supabase project (or
+            reuse an existing one) with a `card2_rsvp_responses` table and put its
+            project URL / anon key below (replace YOUR_SUPABASE_PROJECT_URL and
+            YOUR_SUPABASE_ANON_KEY). Do not reuse another card's Formspree ID or
+            Supabase anon key here.
+          -->
+          <form
+            class="rsvp-form reveal glass"
+            id="rsvpForm"
+            action="https://formspree.io/f/YOUR_FORMSPREE_RSVP_ENDPOINT"
+            method="POST"
+            data-sync-url="YOUR_SUPABASE_PROJECT_URL"
+            data-sync-key="YOUR_SUPABASE_ANON_KEY"
+            data-sync-table="card2_rsvp_responses"
+            novalidate
+          >
+            <input type="hidden" name="form_name" value="Wedding RSVP" />
+            <div class="form-row">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="form-row">
+              <label for="guests">Number of Guests</label>
+              <input id="guests" name="guests" type="number" min="0" max="10" value="1" required />
+            </div>
+            <div class="form-row">
+              <label for="attendance">Will you attend?</label>
+              <select id="attendance" name="attendance" required>
+                <option value="">Please select</option>
+                <option value="yes">Yes, with pleasure</option>
+                <option value="no">No, unfortunately</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label id="attendingEventsLabel">Which celebrations will you attend?</label>
+              <!-- One checkbox per entry in the EVENTS array (main.js), rendered by renderAttendingEventsCheckboxes() -->
+              <div class="checkbox-group" id="attendingEventsGroup" role="group" aria-labelledby="attendingEventsLabel"></div>
+            </div>
+            <button class="btn btn-primary submit-btn" type="submit">Send RSVP</button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <h2 class="section-title reveal" id="gallery-title">Share Your Moments</h2>
+          <p class="section-intro reveal">
+            Share your ceremony moments live. Uploaded photos stay here for everyone to see.
+          </p>
+
+          <article class="gallery-upload-card reveal glass">
+            <h3>Upload Ceremony Photos</h3>
+            <p>Add a photo from your phone and it will appear in the live guest gallery.</p>
+            <!--
+              TODO: create a `card2_gallery_photos` table and a `card2-gallery` storage
+              bucket in your Supabase project, then put its project URL / anon key below
+              (replace YOUR_SUPABASE_PROJECT_URL and YOUR_SUPABASE_ANON_KEY).
+            -->
+            <form
+              class="gallery-upload-form"
+              id="galleryUploadForm"
+              data-sync-url="YOUR_SUPABASE_PROJECT_URL"
+              data-sync-key="YOUR_SUPABASE_ANON_KEY"
+              data-gallery-table="card2_gallery_photos"
+              data-gallery-bucket="card2-gallery"
+              data-gallery-limit="36"
+              data-max-file-mb="8"
+              novalidate
+            >
+              <div class="gallery-upload-grid">
+                <div class="form-row">
+                  <label for="galleryUploaderName">Your Name (optional)</label>
+                  <input
+                    id="galleryUploaderName"
+                    name="galleryUploaderName"
+                    type="text"
+                    maxlength="40"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="galleryCaption">Caption</label>
+                  <input
+                    id="galleryCaption"
+                    name="galleryCaption"
+                    type="text"
+                    maxlength="80"
+                    placeholder="Write a short caption"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="galleryPhotoFile">Select Photo</label>
+                <input
+                  id="galleryPhotoFile"
+                  name="galleryPhotoFile"
+                  type="file"
+                  accept="image/*"
+                  required
+                />
+              </div>
+              <button class="btn btn-primary" type="submit">Upload Photo</button>
+              <p class="gallery-upload-feedback" id="galleryUploadFeedback" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <div class="guest-gallery-header reveal">
+            <h3>Live Guest Moments</h3>
+            <p>Photos uploaded by guests during the ceremony will appear here.</p>
+          </div>
+          <div class="gallery-grid guest-gallery-grid" id="guestGalleryGrid" aria-live="polite"></div>
+
+        </div>
+      </section>
+
+      <section class="section admin-panel-section" id="adminPanel">
+        <div class="container admin-container">
+          <h2 class="section-title">Admin Control Panel</h2>
+          <div class="admin-controls-wrapper">
+            <div class="admin-tabs" role="tablist">
+              <button class="active" id="tab-rsvps" data-tab="rsvps" role="tab" aria-selected="true">RSVPs</button>
+              <button id="tab-blessings" data-tab="blessings" role="tab" aria-selected="false">Blessings</button>
+              <button id="tab-gallery" data-tab="gallery" role="tab" aria-selected="false">Gallery</button>
+            </div>
+
+            <div class="admin-tab-content active" id="panel-rsvps" role="tabpanel">
+              <div class="admin-table-scroll">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Guests</th>
+                      <th>Attending</th>
+                      <th>Celebrations</th>
+                      <th>Email/Phone</th>
+                      <th>Date</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminRsvpBody">
+                    <tr><td colspan="7">Loading RSVPs...</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-tab-content" id="panel-blessings" role="tabpanel" style="display: none;">
+              <div class="admin-list" id="adminBlessingList">
+                <p>Loading Blessings...</p>
+              </div>
+            </div>
+
+            <div class="admin-tab-content" id="panel-gallery" role="tabpanel" style="display: none;">
+              <div class="admin-grid" id="adminGalleryGrid">
+                <p>Loading Gallery...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" id="toTopBtn" type="button" aria-label="Back to top">
+      <span aria-hidden="true">&#8593;</span>
+    </button>
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      type="button"
+      aria-label="Toggle background music"
+      aria-pressed="false"
+    >
+      <span class="music-wave" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="music-text" id="musicText">Music Off</span>
+    </button>
+    <!-- TODO: replace assets/bg-music.mp3 with a real (licensed) background track before launch. -->
+    <audio id="bgMusic" loop preload="metadata" playsinline>
+      <source src="assets/bg-music.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="celebration-layer" id="celebrationLayer" aria-hidden="true"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-monogram">A<span>&amp;</span>S</div>
+        <div class="footer-contact">
+          <p>With love, Ali &amp; Sara</p>
+          <p>Please use the RSVP form for private coordination.</p>
+        </div>
+        <div class="social-links" aria-label="Social media">
+          <a href="https://github.com/nusRying" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-admin">
+          <button id="adminLoginBtn" class="admin-login-link" type="button">Admin Login</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js?v=20260731-1" defer></script>
+  </body>
+</html>
